@@ -1,9 +1,9 @@
 package br.com.aluravollmed.vollmed_api.Controller;
 
 import br.com.aluravollmed.vollmed_api.domain.usuario.DadosAutenticacao;
-import br.com.aluravollmed.vollmed_api.infra.security.DadosTokenjwt;
-import br.com.aluravollmed.vollmed_api.infra.security.TokenService;
+import br.com.aluravollmed.vollmed_api.domain.usuario.DadosTokenJWT;
 import br.com.aluravollmed.vollmed_api.domain.usuario.Usuario;
+import br.com.aluravollmed.vollmed_api.infra.security.TokenService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -16,21 +16,21 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/login")
-public class ControllerLogin {
-    @Autowired
-    private AuthenticationManager authenticationManager;
+public class LoginController {
 
     @Autowired
-    private TokenService tokenService;
+    private AuthenticationManager manager;
+
+    @Autowired
+    private TokenService service;
 
     @PostMapping
-    public ResponseEntity efetuarLogin(@RequestBody @Valid DadosAutenticacao dados){
+    public ResponseEntity efetuarLogin(@RequestBody @Valid DadosAutenticacao dadosAutenticacao){
+        var token = new  UsernamePasswordAuthenticationToken(dadosAutenticacao.login(), dadosAutenticacao.senha());
+        var authentication = manager.authenticate(token);
+        var tokenjwt = service.gerarToken((Usuario) authentication.getPrincipal());
 
-        var token = new UsernamePasswordAuthenticationToken(dados.login(),dados.senha());
-        var authetication = authenticationManager.authenticate(token);
-        var tokenJWT = tokenService.gerarToken((Usuario) authetication.getPrincipal());
-
-
-        return ResponseEntity.ok(new DadosTokenjwt(tokenJWT));
+        return ResponseEntity.ok(new DadosTokenJWT(tokenjwt));
     }
+
 }

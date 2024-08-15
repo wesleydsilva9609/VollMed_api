@@ -4,7 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6e0c0d7-519f-48e5-b423-074e4d6e5d5d" name="Changes" comment="voll med api aplicando spring secutiry" />
+    <list default="true" id="b6e0c0d7-519f-48e5-b423-074e4d6e5d5d" name="Changes" comment="voll med api aplicando spring secutiry">
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/aluravollmed/vollmed_api/Controller/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/aluravollmed/vollmed_api/domain/usuario/DadosTokenJWT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/aluravollmed/vollmed_api/Controller/ControllerLogin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/aluravollmed/vollmed_api/domain/usuario/AutenticacaoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/aluravollmed/vollmed_api/domain/usuario/AutenticacaoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/aluravollmed/vollmed_api/domain/usuario/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/aluravollmed/vollmed_api/domain/usuario/Usuario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/aluravollmed/vollmed_api/infra/security/DadosTokenjwt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/aluravollmed/vollmed_api/infra/security/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/aluravollmed/vollmed_api/infra/security/SecurityConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/aluravollmed/vollmed_api/infra/security/SecurityFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/aluravollmed/vollmed_api/infra/security/SecurityFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/aluravollmed/vollmed_api/infra/security/TokenService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/aluravollmed/vollmed_api/infra/security/TokenService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/aluravollmed/vollmed_api/Controller/ControllerLogin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/aluravollmed/vollmed_api/domain/usuario/Usuario.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/aluravollmed/vollmed_api/domain/usuario/Usuario.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/aluravollmed/vollmed_api/infra/security/DadosTokenjwt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/aluravollmed/vollmed_api/infra/security/SecurityConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/aluravollmed/vollmed_api/infra/security/SecurityConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/aluravollmed/vollmed_api/infra/security/SecurityFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/aluravollmed/vollmed_api/infra/security/SecurityFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/aluravollmed/vollmed_api/infra/security/TokenService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/aluravollmed/vollmed_api/infra/security/TokenService.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,13 +34,14 @@
       <list>
         <option value="Enum" />
         <option value="Interface" />
-        <option value="Record" />
         <option value="Class" />
+        <option value="Record" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -45,13 +65,14 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/Pichau/OneDrive/Área de Trabalho/review/vollmed_api&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="br.com.aluravollmed.vollmed_api.domain.usuario" />
+      <recent name="br.com.aluravollmed.vollmed_api.infra.security" />
       <recent name="br.com.aluravollmed.vollmed_api.domain.paciente" />
       <recent name="br.com.aluravollmed.vollmed_api.domain.medico" />
       <recent name="br.com.aluravollmed.vollmed_api.domain" />

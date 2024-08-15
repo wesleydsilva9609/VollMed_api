@@ -12,6 +12,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import java.util.Collection;
 import java.util.List;
 
+
 @Entity(name = "Usuario")
 @Table(name = "usuarios")
 @Getter
@@ -25,9 +26,10 @@ public class Usuario implements UserDetails {
     private String login;
     private String senha;
 
+
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
-        return List.of(new SimpleGrantedAuthority("ROLE.USER"));
+        return List.of(new SimpleGrantedAuthority("ROLE_USER"));
     }
 
     @Override
@@ -60,3 +62,5 @@ public class Usuario implements UserDetails {
         return true;
     }
 }
+
+
